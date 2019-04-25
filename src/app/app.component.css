@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+    font-family: arial;  
+    
+}
+
+
+.title {
+    font-size: 30px;
+}
+
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+    border: solid gray 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+
+/* L I S T */
+ul {
+    padding: 0px;
+    margin: 5px;
+}
+
+li {        
+    list-style:  none;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: dodgerblue; */
+    width: 100%;
+    align-content: center;
+}
+
+/* B U T T O N S */
+
+
+.completeBtn {
+    border: 1px solid dodgerblue;
+    background-color: white;
+    color: dodgerblue;
+}
+
+.addBtn {
+    
+    background-color:  dodgerblue;
+    border-radius: 3px;
+    border: 0px;
+    color: white;
+    height: 20px;
+    /* margin-top: 10px; */
+
+}
+
+.delBtn {
+    background-color: transparent;
+    border: none;
+}
+
+input {
+    margin-bottom: 10px;
+}

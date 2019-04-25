@@ -1,0 +1,26 @@
+<body>
+  
+  <div>
+    
+    <p><span class="title">TODO List</span>  <br>
+    A place to store things you have to do.</p>
+
+  <input type="text" placeholder="Filter your to-dos">
+
+    
+    <ul  *ngFor="let todo of todoArray; let i = index">
+      <li [ngClass]="{'lineThrough': todo.completed}">
+        {{ i+1 }}     
+        <button class="completeBtn" (click)="completeBTN(todo)" *ngIf="!todo.completed">Completed</button>
+        {{todo.task}}   
+        <button  class="delBtn" (click)="remove(i)">X</button>
+      </li>  
+    </ul>
+
+    <input type="text" [(ngModel)]="newTask" placeholder="Add your to-do">
+
+    <button class="addBtn" (click)="addButton()">ADD</button>
+
+  </div>
+
+</body>
